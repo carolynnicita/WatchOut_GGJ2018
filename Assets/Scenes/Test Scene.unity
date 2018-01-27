@@ -3055,6 +3055,11 @@ MonoBehaviour:
   verbose: 0
   createComponents: 1
   updateDynamically: 1
+--- !u!1 &729441054 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1243270003810132, guid: 17bcafc87ec3c66479d4c054fa9fc871,
+    type: 2}
+  m_PrefabInternal: {fileID: 1155599819}
 --- !u!1 &760514712
 GameObject:
   m_ObjectHideFlags: 0
@@ -4768,6 +4773,16 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1301929957 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1296797489991608, guid: 17bcafc87ec3c66479d4c054fa9fc871,
+    type: 2}
+  m_PrefabInternal: {fileID: 1155599819}
+--- !u!4 &1301929958 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4884082917889636, guid: 17bcafc87ec3c66479d4c054fa9fc871,
+    type: 2}
+  m_PrefabInternal: {fileID: 1155599819}
 --- !u!1 &1314674132
 GameObject:
   m_ObjectHideFlags: 0
@@ -4802,8 +4817,8 @@ MonoBehaviour:
   activeScriptingDefineSymbolsWithoutSDKClasses:
   - symbol: VRTK_DEFINE_SDK_OCULUS_AVATAR
     buildTargetGroupName: Standalone
-  scriptAliasLeftController: {fileID: 0}
-  scriptAliasRightController: {fileID: 0}
+  scriptAliasLeftController: {fileID: 1301929957}
+  scriptAliasRightController: {fileID: 729441054}
   autoManageVRSettings: 1
   autoLoadSetup: 1
   setups:
@@ -7036,6 +7051,48 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1833998680}
+--- !u!1001 &1851277452
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1301929958}
+    m_Modifications:
+    - target: {fileID: 4550350886721330, guid: d70b3b29f1afceb4e9b056f0f2a1edcc, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550350886721330, guid: d70b3b29f1afceb4e9b056f0f2a1edcc, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550350886721330, guid: d70b3b29f1afceb4e9b056f0f2a1edcc, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550350886721330, guid: d70b3b29f1afceb4e9b056f0f2a1edcc, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550350886721330, guid: d70b3b29f1afceb4e9b056f0f2a1edcc, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550350886721330, guid: d70b3b29f1afceb4e9b056f0f2a1edcc, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550350886721330, guid: d70b3b29f1afceb4e9b056f0f2a1edcc, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550350886721330, guid: d70b3b29f1afceb4e9b056f0f2a1edcc, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d70b3b29f1afceb4e9b056f0f2a1edcc, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1864959241
 GameObject:
   m_ObjectHideFlags: 0
