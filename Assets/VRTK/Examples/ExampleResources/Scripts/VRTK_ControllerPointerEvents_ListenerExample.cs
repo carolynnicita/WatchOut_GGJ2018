@@ -33,22 +33,37 @@
 
         private void DoPointerIn(object sender, DestinationMarkerEventArgs e)
         {
-            DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "POINTER IN", e.target, e.raycastHit, e.distance, e.destinationPosition);
+          //  Debug.Log(e);
+          //  DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "POINTER IN", e.target, e.raycastHit, e.distance, e.destinationPosition);
+            GameObject direct = GameObject.Find(e.target.name);
+            //if direct
+            if (e.target.name.Contains("TestLion"))
+            {
+                Quaternion d = direct.transform.rotation;
+                GameObject.Destroy(direct);
+                //   direct.transform.position.Set(236.6f, 10.3f, 224.2f);
+                GameObject testlion = GameObject.Find("TestLion");
+                GameObject.Instantiate(testlion,
+                    new Vector3(236.6f+Random.Range(-10,10), 10.3f + Random.Range(-10, 10), 224.2f),
+                    testlion.transform.rotation);
+            }
+           
+            
         }
 
         private void DoPointerOut(object sender, DestinationMarkerEventArgs e)
         {
-            DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "POINTER OUT", e.target, e.raycastHit, e.distance, e.destinationPosition);
+        //    DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "POINTER OUT", e.target, e.raycastHit, e.distance, e.destinationPosition);
         }
 
         private void DoPointerHover(object sender, DestinationMarkerEventArgs e)
         {
-            DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "POINTER HOVER", e.target, e.raycastHit, e.distance, e.destinationPosition);
+      //      DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "POINTER HOVER", e.target, e.raycastHit, e.distance, e.destinationPosition);
         }
 
         private void DoPointerDestinationSet(object sender, DestinationMarkerEventArgs e)
         {
-            DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "POINTER DESTINATION", e.target, e.raycastHit, e.distance, e.destinationPosition);
+      //      DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "POINTER DESTINATION", e.target, e.raycastHit, e.distance, e.destinationPosition);
         }
     }
 }
